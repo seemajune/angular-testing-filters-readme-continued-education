@@ -1,10 +1,12 @@
 tags: 
   - angular
-  - directives
-  - introduction
+  - testing
+  - filters
 languages:
   - javascript
 frameworks:
   - angular
+  - jasmine
+  - karma
 resources: 
   - 0
