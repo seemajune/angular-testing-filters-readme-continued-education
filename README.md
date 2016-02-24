@@ -15,7 +15,7 @@ As we learned earlier, we can use either filters in the DOM or in our controller
 
 We're going to be writing our filter's tests using Karma and Jasmine - this means we will have to be using the filters in our controllers as we cannot test our DOM.
 
-The tests we are about to write are quite simialr to tests we've done before. We will be using a controller that filters a list, and we'll be ensuring that filtered list is correct.
+The tests we are about to write are quite similar to tests we've done before. We will be using a controller that filters a list, and we'll be ensuring that filtered list is correct.
 
 Let's take our basic controller. We've got a list of people, a search term and our filtered list. We've got a function to call to re-filter our list when the search term changes.
 
