@@ -13,11 +13,11 @@ Now that we can utilise the power of filters, let's test them to make sure they'
 
 As we learned earlier, we can use either filters in the DOM or in our controllers.
 
-We're going to be writing our filter's tests using Karma and Jasmine - this means we will have to be using the filters in our controllers as we cannot test our DOM.
+We're going to be writing our filter's tests using Karma and Jasmine - this means we will have to be using the filters in our controllers as we cannot test our DOM. We do this because our filters directly manipulate data, and that's all we need to test. If they manipulated the DOM, we'd test the DOM.
 
 The tests we are about to write are quite simialr to tests we've done before. We will be using a controller that filters a list, and we'll be ensuring that filtered list is correct.
 
-Let's take our basic controller. We've got a list of people, a search term and our filtered list. We've got a function to call to re-filter our list when the search term changes.
+Let's take our basic controller. We've got a list of people, a search term and our filtered list. We've got a function to call to re-filter our list when the search term changes (this could be called when a user presses search or by using `ng-change` on the input to fire it whenever the input changes).
 
 ```js
 function ContactController($filter) {
@@ -102,4 +102,4 @@ it('should re-filter the results correctly when changing search term', function 
 });
 ```
 
-Success!
+Success! This is quite similar to testing controllers, purely because we are using the filters within the controllers.
